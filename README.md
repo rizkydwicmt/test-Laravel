@@ -30,5 +30,6 @@
     - reff=2000837452 Duplicate reff
 
 3. http://localhost:8000/api/v1/transaksi/status?reff=2000837451
+    - reff=2000837450 NotFound
     - reff=2000837451 Falid 2 data
     - reff=2000837452 Falid 1 data
