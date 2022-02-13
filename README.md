@@ -22,7 +22,8 @@
     - [x] simply load the data found, otherwise reply with HTTP code 403.
 
 ## Example requests
-# Header must be set "Sec-Token", "20220213"
+- Header must be set "Sec-Token", "yyyyMMdd"
+
 1. http://localhost:8000/api/v1/transaksi/order?amount=100000&reff=2000837451&expired=2022-02-14T16%3A12%3A48%2B07%3A00&name=Nama+Pelanggan&hp=081854323334
 
 2. http://localhost:8000/api/v1/transaksi/payment?reff=2000837451
