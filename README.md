@@ -20,3 +20,15 @@
     - [x] table (let’s call it transaction backup table) using the event/job mechanism.
 - [x] Check Status -- used to check the payment status
     - [x] simply load the data found, otherwise reply with HTTP code 403.
+
+## Example requests
+1. http://localhost:8000/api/v1/transaksi/order?amount=100000&reff=2000837451&expired=2022-02-14T16%3A12%3A48%2B07%3A00&name=Nama+Pelanggan&hp=081854323334
+
+2. http://localhost:8000/api/v1/transaksi/payment?reff=2000837451
+    - reff=2000837450 NotFound
+    - reff=2000837451 Falid
+    - reff=2000837452 Duplicate reff
+
+3. http://localhost:8000/api/v1/transaksi/status?reff=2000837451
+    - reff=2000837451 Falid 2 data
+    - reff=2000837452 Falid 1 data
